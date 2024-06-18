@@ -39,11 +39,11 @@ We have used the following external libraries:
 
 ## Screenshots
 
-![image](https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw15g02/assets/123483459/5a8f8486-2ecb-4365-bc24-247091fe7c04)
-![image](https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw15g02/assets/123483459/23ee2759-5123-43b9-bf71-00d4f4865f63)
-![image](https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw15g02/assets/123483459/75076d79-263b-4d3b-85f5-b8b4cee8e3c2)
-![image](https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw15g02/assets/123483459/379e2604-f57c-4f3f-a05c-69715571a0d0)
-![image](https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw15g02/assets/123483459/514e665b-b5b9-40f1-9fd3-d4614e83e03f)
+![image](./images/screenshots/331905643-5a8f8486-2ecb-4365-bc24-247091fe7c04.png)
+![image](./images/screenshots/331905674-23ee2759-5123-43b9-bf71-00d4f4865f63.png)
+![image](./images/screenshots/331906205-75076d79-263b-4d3b-85f5-b8b4cee8e3c2.png)
+![image](./images/screenshots/331905684-379e2604-f57c-4f3f-a05c-69715571a0d0.png)
+![image](./images/screenshots/331906316-514e665b-b5b9-40f1-9fd3-d4614e83e03f.png)
 
 
 ## Implemented Features
@@ -94,3 +94,16 @@ We also implemented the following additional requirements:
 - [X] **User Preferences**
 - [X] **Analytics Dashboard**
 - [X] **Shipping Costs**
+
+---
+
+## Tips and Tricks (for anyone doing a similar project)
+
+- At the beginning of the project, do not speedrun the website mockup creation, and make the mockups as close to the final product as possible. This will really help the website creation to be more streamlined and avoid further surprises down the line. On the same note, think well of the features you want to implement right at the start.
+- Try to make the design as similar between the pages as possible. Reusing components between the different pages really helps with this. This will allow you to have much cleaner code (especially CSS code) and a more consistent interface. The use of differently-looking buttons, inputs and such was one of the reasons this project was penalized.
+- We were also penalized for "overmixing" PHP business logic code with HTML code. We should have created the database connection in one place (in the page function, for example), extracted all the needed information and passed it to the rest of the functions, while separating the code related to database communication with the code responsible for the HTML output.
+- I recommend creating a framework, like we did, as it simplifies a lot of "simple" repetitive things you need to do and also allows you to do some niche stuff (like setting personalized routes, without relying on the project folder structure). I also recommend creating a REST API, as it allows data interchange with the server in a much cleaner way than with actions. The API we created also follows the HATEOAS principle.
+
+## Results
+
+Final Grade: 18.6/20
